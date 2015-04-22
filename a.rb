@@ -14,12 +14,9 @@ class Person
 end
 
 require 'rspec'
-
 RSpec.describe Person do
-  context 'name' do
-    it 'shows' do
-      person = Person.new('Steve Jobs')
-      expect(person.name).to eq('Steve Jobs')
-    end
+  it 'name' do
+    person = Person.new('Steve Jobs')
+    expect(person.name).to eq('Steve Jobs')
   end
 end
