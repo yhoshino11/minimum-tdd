@@ -13,4 +13,4 @@ guard :rspec, cmd: 'bundle exec rspec' do
   dsl.watch_spec_files_for(ruby.lib_files)
 end
 
-notification :tmux, color_location: 'status-left-bg'
+notification :tmux, display_message: true, timeout: 1, default_message_format: '%s >> %s', line_separator: ' > ', default_message_color: 'black', display_on_all_clients: false, color_location: %w(pane-active-border-fg)
